@@ -12,5 +12,10 @@ testSample() {
   assertEquals "${output}" "Hello World"
 }
 
+dockerSample(){
+    docker build -t docker-sample .
+    docker images
+}
+
 # shUnit2 は最後に読み込んであげる必要がある
-. ./shunit2
+. ./shunit2.1

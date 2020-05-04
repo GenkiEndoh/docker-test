@@ -13,6 +13,7 @@ testSample() {
 }
 
 dockerSample(){
+    cd Dockerfiles/
     docker build -t docker-sample .
     docker images
 }
